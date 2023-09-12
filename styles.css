@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+.side-img{
+    width: 40%;
+}
+
+img {
+    height: 100vh;
+    width: 100%;
+}
+
+.container-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@media only screen and (min-width: 700px) {
+    
+}
