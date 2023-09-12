@@ -1,11 +1,14 @@
+body {
+    margin: 0;
+}
+
 .container{
     display: flex;
     height: 100vh;
 }
 
 .side-img{
-    width: min(40vw, 800px);
-    position: relative;
+    width: 40vw;
     background-image: url("images/valentin-beauvais-yVUQlyRlJSw-unsplash.jpg");
     background-position: center;
     background-size: auto;
@@ -15,10 +18,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20vh;
+    margin-top: 30vh;
     padding: 16px;
     background: rgb(0, 0, 0, 0.5);
-
     gap: 10px;
 }
 
@@ -37,7 +39,28 @@ img {
 .container-column {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    color: white;
+    background-color: black;
     align-items: flex-start;
+    width: 60vw;
+    gap: 60px;
+}
+
+p {
+    font-size: 28px;
+}
+
+.text{
+    padding-left: 40px;
+    width: 90%;
+}
+
+.form {
+    width: 100%;
+    height: 20vh;
+    background-color: #111212;
+    box-shadow: 0px 10px 5px #1e1f1f;
 }
 
 @media only screen and (min-width: 700px) {
