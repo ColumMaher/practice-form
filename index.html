@@ -25,7 +25,7 @@
                     Sign up <em>now</em> to get started.
                 </p>
             </div>
-            <form action="#" method="post">
+            <form action="" method="post">
                 <div class="form desktop">
                     <legend>Start here!</legend>
                     <div class="input">
@@ -55,11 +55,11 @@
                         <label for="password">
                             Password*
                         </label>
-                        <input type="password" id="password" required>
+                        <input type="password" id="password" minlength="8" required>
                         </div>
                     <div class="input">
                         <label for="">Confirm Password*</label>
-                        <input type="password" id="passwordConfirm" required>
+                        <input type="password" id="passwordConfirm" minlength="8" oninput="confirmPassword();" required>
                     </div>
                 </div>
                 <button type="submit">Create Account</button>

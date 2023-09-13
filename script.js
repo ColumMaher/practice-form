@@ -1,16 +1,16 @@
-const inputs = document.querySelectorAll('input')
+function confirmPassword(){
+    var password = document.querySelector('#password');
+    var confirmPassword = document.querySelector('#passwordConfirm');
 
-inputs.forEach(function (currentValue, currentIndex, listObj) {
-    currentValue.addEventListener('submit', validateForm);
-    console.log(`${currentValue}, ${currentIndex}, ${this}`);
-});
+    console.log(password.value)
+    console.log(confirmPassword.value)
 
-function validateForm(e) {
-    const form = e.target;
-
-    if (form.checkValidity()){
-        console.log(form);
-    } else {
-        e.preventDefault();
+    if(password.value === ""){
+        password.setCustomValidity("Please enter password before confirming!");
+        return;
+    }
+    if(password.value !== confirmPassword.value){
+        confirmPassword.setCustomValidity("Passwords do not match!");
+        return;
     }
 }
