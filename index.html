@@ -29,28 +29,37 @@
                     <legend>Start here!</legend>
                     <div class="input">
                         <label for="firstName">
-                            First Name
+                            First Name*
                         </label>
-                        <input type="text" id="firstName">
+                        <input type="text" id="firstName" required>
                         </div>
                     <div class="input">
-                        <label for="lastName" id="lastName">
-                            Last Name
+                        <label for="lastName">
+                            Last Name*
                         </label>
-                        <input type="text">
+                        <input type="text" id="lastName" required>
                         </div>
                     <div class="input">
                         <label for="email">
-                            Email
+                            Email*
                         </label>
-                        <input type="email" id="email">
+                        <input type="email" id="email" required>
                         </div>
+                    
+                    <div class="input">
+                        <label for="">Phone Number</label>
+                        <input type="number" id="phoneNumber">
+                    </div>
                     <div class="input">
                         <label for="password">
-                            Password
+                            Password*
                         </label>
-                        <input type="password" id="password">
+                        <input type="password" id="password" required>
                         </div>
+                    <div class="input">
+                        <label for="">Confirm Password*</label>
+                        <input type="password" id="passwordConfirm" required>
+                    </div>
                 </div>
                 <button type="submit">Create Account</button>
             </form>

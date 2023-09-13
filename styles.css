@@ -60,6 +60,7 @@ legend {
     width: 100%;
     padding-top: 16px;
     font-size: 20px;
+    font-weight: bolder;
 }
 
 .form {
@@ -91,6 +92,48 @@ input {
     border: solid 1px #262929;
     border-radius: 2px;
 }
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button {
+    position: relative;
+    background-color: #a53ec7;
+    border-radius: 5px;
+    box-shadow: #9819c2 0px 4px 0px 0px;
+    padding: 15px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+    overflow: hidden;
+    top: 20px;
+    left: 40px;
+  }
+  
+  button::before {
+    content: "";
+    background-color: #c159e3;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 700ms ease-in-out;
+    display: inline-block;
+  }
+  
+  button:hover::before {
+    width: 100%;
+  }
 
 @media only screen and (min-width: 700px) {
 
